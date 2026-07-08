@@ -1,230 +1,147 @@
-\# Olist E-Commerce Sales Analysis
+# Olist E-Commerce Sales Analysis
 
-
-
-\## Project Overview
-
-
+## Project Overview
 
 This project analyzes sales performance and customer behavior using the Olist Brazilian E-Commerce dataset.
 
+The analysis combines Python-based Exploratory Data Analysis (EDA) with interactive Power BI dashboards to identify revenue trends, customer purchasing patterns, and actionable business insights.
 
+---
 
-The analysis combines Python-based Exploratory Data Analysis (EDA) with interactive Power BI dashboards to identify revenue trends, customer spending patterns, and key business insights.
+## Business Objectives
 
+- Analyze revenue and order trends over time.
+- Identify the product categories driving business performance.
+- Understand customer purchasing and spending patterns.
+- Generate actionable business insights to support strategic decision-making.
 
+---
 
-\---
+## Tools Used
 
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Google Colab
+- Power BI
 
+---
 
-\## Business Objectives
+## Project Workflow
 
+### 1. Data Cleaning & Preparation
 
+- Cleaned and validated the raw data.
+- Handled missing values.
+- Converted data types.
+- Created derived features for analysis.
+- Prepared datasets for dashboard reporting.
 
-\- Analyze sales performance over time.
+### 2. Exploratory Data Analysis (EDA)
 
-\- Identify top-performing product categories.
+The notebook investigates several business questions, including:
 
-\- Understand customer spending behavior.
+- Revenue trends over time.
+- Order volume trends.
+- Average Order Value (AOV).
+- Product category performance.
+- Customer purchasing behavior.
+- Revenue concentration (Pareto analysis).
 
-\- Detect business trends and potential growth opportunities.
+### 3. Dashboard Development
 
+Two interactive Power BI dashboards were created.
 
-
-\---
-
-
-
-\## Tools Used
-
-
-
-\- Python
-
-\- Pandas
-
-\- NumPy
-
-\- Matplotlib
-
-\- Seaborn
-
-\- Google Colab
-
-\- Power BI
-
-
-
-\---
-
-
-
-\## Project Workflow
-
-
-
-\### 1. Data Cleaning \& Preparation
-
-
-
-\- Handled missing values.
-
-\- Converted data types.
-
-\- Created derived metrics.
-
-\- Prepared datasets for dashboard reporting.
-
-
-
-\### 2. Exploratory Data Analysis (EDA)
-
-
-
-\- Revenue analysis.
-
-\- Order analysis.
-
-\- Customer analysis.
-
-\- Product category analysis.
-
-\- Trend identification.
-
-
-
-\### 3. Dashboard Development
-
-
-
-Two Power BI dashboards were created:
-
-
-
-\#### Sales Performance Dashboard
-
-
+#### Sales Performance Dashboard
 
 Tracks:
 
+- Total Revenue
+- Number of Orders
+- Unique Customers
+- Average Order Value (AOV)
+- Monthly Revenue Trend
+- Average Delivery Time
+- Top Product Categories
 
-
-\- Total Revenue
-
-\- Number of Orders
-
-\- Number of Customers
-
-\- Average Order Value (AOV)
-
-\- Revenue trends over time
-
-\- Top product categories
-
-
-
-\#### Customer Analysis Dashboard
-
-
+#### Customer Analysis Dashboard
 
 Tracks:
 
+- Revenue per Customer
+- Customer Value Distribution
+- Customer Segmentation
+- Top Spending Customers
+- Revenue Concentration (Pareto)
 
+---
 
-\- Average Customer Spend
+## Key Insights
 
-\- Top Customer Spend
+### Sales Performance
 
-\- Customer spending distribution
+- Revenue and order volume increased significantly throughout the analyzed period.
+- Revenue growth was primarily driven by increasing order volume rather than higher order values.
+- Revenue was concentrated within a limited number of product categories.
+- A partial final month was identified and excluded from trend analysis.
 
-\- Customer segmentation
+### Customer Analysis
 
-\- Top spending customers
+- Customer spending is highly skewed.
+- Most customers belong to the Low Value segment.
+- A small group of high-value customers contributes disproportionately to total revenue.
+- Significant variation exists between average and top customer revenue.
 
+---
 
+## Dashboard Preview
 
-\---
+### Sales Performance Dashboard
 
+![Sales Dashboard](images/sales_dashboard.png)
 
+### Customer Analysis Dashboard
 
-\## Key Insights
+![Customer Dashboard](images/customer_dashboard.png)
 
+---
 
-
-\### Sales Performance
-
-
-
-\- Revenue and order volume increased significantly over time.
-
-\- Growth was driven primarily by increasing demand.
-
-\- Revenue was concentrated within a limited number of product categories.
-
-\- A partial final month was identified and excluded from trend analysis.
-
-
-
-\### Customer Analysis
-
-
-
-\- Customer spending is highly skewed.
-
-\- Most customers belong to the Low Value segment.
-
-\- A small group of high-value customers contributes disproportionately to revenue.
-
-\- Significant variation exists between average and top customer spending.
-
-
-
-\---
-
-
-
-\## Dashboard Preview
-
-
-
-(Add screenshots here)
-
-
-
-\### Sales Dashboard
-
-
-
-\[Insert screenshot]
-
-
-
-\### Customer Analysis Dashboard
-
-
-
-\[Insert screenshot]
-
-
-
-\---
-
-
-
-\## Repository Structure
-
-
+## Repository Structure
 
 ```text
+├── Olist_EDA.ipynb
+├── Olist_Dashboard.pbix
+├── README.md
+├── requirements.txt
+└── images/
+    ├── sales_dashboard.png
+    └── customer_dashboard.png
+```
 
-data/
+---
 
-notebooks/
+## How to Run
 
-dashboard/
+1. Clone or download this repository.
+2. Install the required Python packages:
 
-screenshots/
+```bash
+pip install -r requirements.txt
+```
 
-README.md
+3. Open the notebook in Jupyter Notebook or Google Colab.
+4. Run all notebook cells.
+5. Open the Power BI dashboard (`.pbix`) to explore the interactive visualizations.
 
+---
+
+## Future Improvements
+
+Potential extensions for this project include:
+
+- Customer retention and cohort analysis.
+- RFM customer segmentation.
+- Geographic sales analysis.
+- Predictive sales forecasting.
